@@ -1,0 +1,289 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.website-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 900px 800px 1000px 50px;
+  justify-content: center;
+}
+
+header {
+  background: white;
+  grid-area: "h";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+header ion-icon {
+  font-size: 30px;
+  color: grey;
+}
+header .logo-container .dell-logo {
+  max-width: 250px;
+  width: 100%;
+}
+header .search-icon {
+  font-size: 20px;
+}
+header .sandwich-logo {
+  display: flex;
+  align-items: center;
+}
+header .sandwich-logo img {
+  margin-top: 5px;
+}
+header .sandwich-icon {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 600px;
+}
+header .input-container input {
+  border: none;
+  width: 90%;
+}
+header .input-container .search-icon {
+  background: white;
+}
+header .person-icon {
+  margin-right: 20px;
+}
+header .cart-icon {
+  margin-right: 20px;
+}
+
+.main-container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: "m";
+}
+.main-container * {
+  display: flex;
+  justify-content: center;
+}
+.main-container img {
+  max-width: 700px;
+  width: 100%;
+}
+.main-container .buy-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.main-container .buy-btn a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 12px;
+  border-radius: 3px;
+}
+.main-container .right a {
+  background-color: #fff;
+  color: #00447c;
+  border: 2px solid #00447c;
+}
+.main-container .left a {
+  background-color: #00447c;
+  color: #fff;
+  border: 2px solid #003056;
+}
+.main-container .buy-btn a:hover {
+  box-shadow: 1px 2px 5px #333;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-container .banner-block {
+  display: flex;
+  border-radius: 5px;
+  background-color: #00447c;
+  box-shadow: 1px 2px 5px #333;
+}
+.banner-container img {
+  max-width: 900px;
+  width: 100%;
+}
+.banner-container .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #00447c;
+}
+.banner-container .about-container h3 {
+  color: #fff;
+  font-weight: 300;
+}
+.banner-container .about-container .about-btn {
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+.banner-container .about-container .about-btn a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-container .contact-block {
+  max-width: 700px;
+  width: 100%;
+  background-color: #00447c;
+  box-shadow: 1px 2px 5px #333;
+  padding: 15px;
+  border-radius: 5px;
+}
+.contact-container .contact-block .h1-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contact-container .contact-block .h1-container h1 {
+  color: #fff;
+  font-weight: 300;
+}
+.contact-container .contact-block .input {
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.contact-container .contact-block .message {
+  min-height: 150px;
+  line-height: 150%;
+  font-family: sans-serif;
+}
+.contact-container .contact-block .name {
+  min-height: 45px;
+}
+.contact-container .contact-block .contact-label {
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-block .send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #0075d5;
+}
+.contact-container .contact-block .send-btn a {
+  color: #0075d5;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+}
+.footer-container h4 {
+  font-weight: 300;
+}
+
+@media (max-width: 1150px) {
+  .banner-block {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  header .person-icon {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  header .cart-icon {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 769px) {
+  header .logo-container .dell-logo {
+    max-width: 0px;
+    width: 100%;
+  }
+  header .person-icon {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  header .cart-icon {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .contact-container .contact-block {
+    max-width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .website-container {
+    grid-template-rows: 50px 700px 500px 900px 50px;
+  }
+}
+@media (max-width: 556px) {
+  .banner-container {
+    margin: 15px;
+    text-align: center;
+  }
+  .contact-container {
+    margin: 15px;
+    text-align: center;
+  }
+  .contact-container .contact-block {
+    max-width: 400px;
+  }
+  .contact-container .h1-container {
+    justify-self: center;
+  }
+  .main-container {
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
