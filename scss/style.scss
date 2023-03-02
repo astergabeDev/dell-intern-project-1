@@ -19,46 +19,45 @@ body {
 }
 header {
   background: white;
-  grid-area: "h";
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--grey);
   ion-icon {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--grey);
   }
   .logo-container {
     .dell-logo {
-      max-width: 250px;
+      max-width: 15.625rem;
       width: 100%;
     }
   }
   .search-icon {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .sandwich-logo {
     display: flex;
     align-items: center;
     img {
-      margin-top: 5px;
+      margin-top: 0.3125rem;
     }
   }
   .sandwich-icon {
-    font-size: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 1.875rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
   .input-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0.3125rem;
     background-color: white;
     border: 1px solid var(--grey);
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem;
     input {
       border: none;
       width: 90%;
@@ -68,10 +67,10 @@ header {
     }
   }
   .person-icon {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
   .cart-icon {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 }
 .main-container {
@@ -79,26 +78,25 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  grid-area: "m";
   * {
     display: flex;
     justify-content: center;
   }
   img {
-    max-width: 700px;
+    max-width: 43.75rem;
     width: 100%;
   }
   .buy-btn-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .buy-btn a {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    padding: 14px 12px;
+    padding: 0.875rem 0.75rem;
     border-radius: 3px;
   }
   .right a {
@@ -127,7 +125,7 @@ header {
     box-shadow: 1px 2px 5px #333;
   }
   img {
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
   }
   .about-container {
@@ -135,8 +133,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     background-color: var(--darkblue);
     h3 {
       color: #fff;
@@ -147,10 +145,10 @@ header {
       border: 2px solid var(--grey);
       border-radius: 3px;
       a {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         background-color: #fff;
         border-radius: 3px;
       }
@@ -172,39 +170,47 @@ header {
       border: none;
     }
     .h1-container {
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       width: 100%;
       h1 {
+        text-align: center;
         color: #fff;
         font-weight: 300;
       }
     }
+    .block {
+      margin-bottom: 1.875rem;
+    }
+    .file {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
     .input {
       border: vertical;
-      font-size: 20px;
+      font-size: 1.25rem;
       width: 100%;
-      min-height: 45px;
+      min-height: 2.8125rem;
       height: 100%;
       box-sizing: border-box;
     }
     .message {
       resize: none;
-      min-height: 100px;
+      min-height: 6.25rem;
       font-family: sans-serif;
     }
     .name {
-      min-height: 45px;
+      min-height: 2.8125rem;
     }
     .contact-label {
-      font-weight: 300;
+      font-weight: 400;
       color: #fff;
     }
     .send-btn {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
-      height: 50px;
+      height: 3.125rem;
       border-radius: 3px;
       text-align: center;
       background-color: #fff;
@@ -213,7 +219,7 @@ header {
         background: none;
         border: none;
         color: var(--darkblue);
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
         text-decoration: none;
       }
@@ -230,27 +236,27 @@ header {
     font-weight: 300;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 71.875rem) {
   .banner-block {
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 65.625rem) {
   header {
     .person-icon {
-      font-size: 22px;
-      margin-left: 10px;
-      margin-right: 5px;
+      font-size: 1.375rem;
+      margin-left: 0.625rem;
+      margin-right: 0.3125rem;
     }
     .cart-icon {
-      font-size: 22px;
-      margin-left: 10px;
-      margin-right: 5px;
+      font-size: 1.375rem;
+      margin-left: 0.625rem;
+      margin-right: 0.3125rem;
     }
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 48.0625rem) {
   header {
     .logo-container {
       .dell-logo {
@@ -259,44 +265,44 @@ header {
       }
     }
     .person-icon {
-      font-size: 15px;
-      margin-left: 10px;
-      margin-right: 5px;
+      font-size: 0.9375rem;
+      margin-left: 0.625rem;
+      margin-right: 0.3125rem;
     }
     .cart-icon {
-      font-size: 15px;
-      margin-left: 10px;
-      margin-right: 5px;
+      font-size: 0.9375rem;
+      margin-left: 0.625rem;
+      margin-right: 0.3125rem;
     }
   }
   .contact-container {
     .contact-block {
-      max-width: 400px;
+      max-width: 25rem;
     }
   }
 }
-@media (max-width: 556px) {
+@media (max-width: 34.75rem) {
   .banner-container {
-    margin: 15px;
+    margin: 0.9375rem;
     text-align: center;
   }
   .contact-container {
     .contact-block {
-      padding: 5px;
-      max-width: 400px;
+      padding: 0.3125rem;
+      max-width: 25rem;
     }
-    margin: 15px;
+    margin: 0.9375rem;
     .h1-container {
       justify-self: center;
     }
   }
   .main-container {
-    margin: 15px;
+    margin: 0.9375rem;
     text-align: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .website-container {
-    grid-template-rows: 50px 700px 500px 900px 50px;
+    grid-template-rows: 3.125rem 43.75rem 31.25rem 56.25rem 3rem;
   }
 }

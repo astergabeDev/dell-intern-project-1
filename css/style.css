@@ -22,45 +22,44 @@ body {
 
 header {
   background: white;
-  grid-area: "h";
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--grey);
 }
 header ion-icon {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: var(--grey);
 }
 header .logo-container .dell-logo {
-  max-width: 250px;
+  max-width: 15.625rem;
   width: 100%;
 }
 header .search-icon {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 header .sandwich-logo {
   display: flex;
   align-items: center;
 }
 header .sandwich-logo img {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 header .sandwich-icon {
-  font-size: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-size: 1.875rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 header .input-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  padding: 0.3125rem;
   background-color: white;
   border: 1px solid var(--grey);
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 header .input-container input {
   border: none;
@@ -70,10 +69,10 @@ header .input-container .search-icon {
   background: white;
 }
 header .person-icon {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 header .cart-icon {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .main-container {
@@ -81,26 +80,25 @@ header .cart-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  grid-area: "m";
 }
 .main-container * {
   display: flex;
   justify-content: center;
 }
 .main-container img {
-  max-width: 700px;
+  max-width: 43.75rem;
   width: 100%;
 }
 .main-container .buy-btn-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .main-container .buy-btn a {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 14px 12px;
+  padding: 0.875rem 0.75rem;
   border-radius: 3px;
 }
 .main-container .right a {
@@ -129,7 +127,7 @@ header .cart-icon {
   box-shadow: 1px 2px 5px #333;
 }
 .banner-container img {
-  max-width: 900px;
+  max-width: 56.25rem;
   width: 100%;
 }
 .banner-container .about-container {
@@ -137,8 +135,8 @@ header .cart-icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   background-color: var(--darkblue);
 }
 .banner-container .about-container h3 {
@@ -151,10 +149,10 @@ header .cart-icon {
   border-radius: 3px;
 }
 .banner-container .about-container .about-btn a {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: #fff;
   border-radius: 3px;
 }
@@ -176,39 +174,47 @@ header .cart-icon {
   border: none;
 }
 .contact-container .contact-block .h1-container {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 100%;
 }
 .contact-container .contact-block .h1-container h1 {
+  text-align: center;
   color: #fff;
   font-weight: 300;
 }
+.contact-container .contact-block .block {
+  margin-bottom: 1.875rem;
+}
+.contact-container .contact-block .file {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
 .contact-container .contact-block .input {
   border: vertical;
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 100%;
-  min-height: 45px;
+  min-height: 2.8125rem;
   height: 100%;
   box-sizing: border-box;
 }
 .contact-container .contact-block .message {
   resize: none;
-  min-height: 100px;
+  min-height: 6.25rem;
   font-family: sans-serif;
 }
 .contact-container .contact-block .name {
-  min-height: 45px;
+  min-height: 2.8125rem;
 }
 .contact-container .contact-block .contact-label {
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
 }
 .contact-container .contact-block .send-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  height: 50px;
+  height: 3.125rem;
   border-radius: 3px;
   text-align: center;
   background-color: #fff;
@@ -218,7 +224,7 @@ header .cart-icon {
   background: none;
   border: none;
   color: var(--darkblue);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -234,66 +240,66 @@ header .cart-icon {
   font-weight: 300;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 71.875rem) {
   .banner-block {
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 65.625rem) {
   header .person-icon {
-    font-size: 22px;
-    margin-left: 10px;
-    margin-right: 5px;
+    font-size: 1.375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.3125rem;
   }
   header .cart-icon {
-    font-size: 22px;
-    margin-left: 10px;
-    margin-right: 5px;
+    font-size: 1.375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.3125rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 48.0625rem) {
   header .logo-container .dell-logo {
     max-width: 0px;
     width: 100%;
   }
   header .person-icon {
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 5px;
+    font-size: 0.9375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.3125rem;
   }
   header .cart-icon {
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 5px;
+    font-size: 0.9375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.3125rem;
   }
   .contact-container .contact-block {
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
-@media (max-width: 556px) {
+@media (max-width: 34.75rem) {
   .banner-container {
-    margin: 15px;
+    margin: 0.9375rem;
     text-align: center;
   }
   .contact-container {
-    margin: 15px;
+    margin: 0.9375rem;
   }
   .contact-container .contact-block {
-    padding: 5px;
-    max-width: 400px;
+    padding: 0.3125rem;
+    max-width: 25rem;
   }
   .contact-container .h1-container {
     justify-self: center;
   }
   .main-container {
-    margin: 15px;
+    margin: 0.9375rem;
     text-align: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .website-container {
-    grid-template-rows: 50px 700px 500px 900px 50px;
+    grid-template-rows: 3.125rem 43.75rem 31.25rem 56.25rem 3rem;
   }
 }
 
