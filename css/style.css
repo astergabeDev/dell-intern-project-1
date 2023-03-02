@@ -6,6 +6,12 @@ body {
   max-width: 100%;
 }
 
+:root {
+  --grey: grey;
+  --darkblue: #00447c;
+  --lightblue: #0075d5;
+}
+
 .website-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -19,11 +25,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--grey);
 }
 header ion-icon {
   font-size: 30px;
-  color: grey;
+  color: var(--grey);
 }
 header .logo-container .dell-logo {
   max-width: 250px;
@@ -50,7 +56,7 @@ header .input-container {
   justify-content: space-between;
   padding: 5px;
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid var(--grey);
   border-radius: 3px;
   width: 100%;
   max-width: 600px;
@@ -98,13 +104,13 @@ header .cart-icon {
 }
 .main-container .right a {
   background-color: #fff;
-  color: #00447c;
-  border: 2px solid #00447c;
+  color: var(--darkblue);
+  border: 2px solid var(--darkblue);
 }
 .main-container .left a {
-  background-color: #00447c;
+  background-color: var(--darkblue);
   color: #fff;
-  border: 2px solid #003056;
+  border: 2px solid var(--darkblue);
 }
 .main-container .buy-btn a:hover {
   box-shadow: 1px 2px 5px #333;
@@ -118,7 +124,7 @@ header .cart-icon {
 .banner-container .banner-block {
   display: flex;
   border-radius: 5px;
-  background-color: #00447c;
+  background-color: var(--darkblue);
   box-shadow: 1px 2px 5px #333;
 }
 .banner-container img {
@@ -132,15 +138,15 @@ header .cart-icon {
   align-items: center;
   margin-left: 40px;
   margin-right: 40px;
-  background-color: #00447c;
+  background-color: var(--darkblue);
 }
 .banner-container .about-container h3 {
   color: #fff;
   font-weight: 300;
 }
 .banner-container .about-container .about-btn {
-  color: grey;
-  border: 2px solid grey;
+  color: var(--grey);
+  border: 2px solid var(--grey);
   border-radius: 3px;
 }
 .banner-container .about-container .about-btn a {
@@ -161,7 +167,7 @@ header .cart-icon {
 .contact-container .contact-block {
   max-width: 700px;
   width: 100%;
-  background-color: #00447c;
+  background-color: var(--darkblue);
   box-shadow: 1px 2px 5px #333;
   padding: 15px;
   border-radius: 5px;
@@ -175,13 +181,14 @@ header .cart-icon {
   font-weight: 300;
 }
 .contact-container .contact-block .input {
-  border: none;
+  border: vertical;
   font-size: 20px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
 .contact-container .contact-block .message {
+  resize: none;
   min-height: 150px;
   line-height: 150%;
   font-family: sans-serif;
@@ -203,10 +210,10 @@ header .cart-icon {
   border-radius: 3px;
   text-align: center;
   background-color: #fff;
-  border: 1px solid #0075d5;
+  border: 1px solid var(--darkblue);
 }
 .contact-container .contact-block .send-btn a {
-  color: #0075d5;
+  color: var(--darkblue);
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -217,7 +224,7 @@ header .cart-icon {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid gray;
+  border-top: 1px solid var(--grey);
 }
 .footer-container h4 {
   font-weight: 300;
@@ -275,6 +282,7 @@ header .cart-icon {
     text-align: center;
   }
   .contact-container .contact-block {
+    padding: 5px;
     max-width: 400px;
   }
   .contact-container .h1-container {
