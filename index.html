@@ -71,21 +71,53 @@
                 <div class="h1-container">
                     <h1>Contact Us</h1>
                 </div>
-                <div>
-                    <h3 class="contact-label">Your name</h3>
-                    <input class="name input" type="text" />
-                </div>
-                <div>
-                    <h3 class="contact-label">Your email</h3>
-                    <input class="name input" type="text" />
-                </div>
-                <div>
-                    <h3 class="contact-label">Your message</h3>
-                    <textarea class="message input" cols="30" rows="10"></textarea>
-                </div>
-                <div class="send-btn">
-                    <a href="#">Send Message</a>
-                </div>
+                <fieldset>
+                    <div>
+                        <label for="name" id="name" name="user_name" class="contact-label">Your Name</label>
+                        <input class="name input" type="text" id="name" name="user_name" placeholder="Your Name" />
+                    </div>
+                    <div>
+                        <label for="email" id="email" name="user_email" class="contact-label">Your Email</label>
+                        <input class="email input" type="email" id="email" name="user_email" placeholder="Your Email" />
+                    </div>
+                    <div>
+                        <label for="ratio" id="ratio" name="user_ratio" class="contact-label">Are you a Dell
+                            Employee</label>
+                        <div class="ratio-block">
+                            <input type="radio" id="yes" name="yes" value="yes">
+                            <label for="yes">Yes</label><br>
+                            <input type="radio" id="no" name="no" value="no">
+                            <label for="no">No</label><br>
+                        </div>
+                    </div>
+                    <div>
+                        <form>
+                            <label for="ratio" id="ratio" name="user_ratio" class="contact-label">What role do you
+                                perform?</label>
+                            <div>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Design</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> Engineering</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                <label for="vehicle3"> Product Management</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <form>
+                            <label class="contact-label" for="myfile">Upload You CV</label>
+                            <input type="file" accept="application/pdf" id="myfile" name="myfile">
+                        </form>
+                    </div>
+                    <div>
+                        <label for="message" id="message" name="user_name" class="contact-label">Your Message</label>
+                        <textarea class="message input" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="send-btn">
+                        <input type="submit" value="Send Message"/>
+                    </div>
+                </fieldset>
             </form>
 
         </div>
