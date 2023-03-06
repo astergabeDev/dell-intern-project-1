@@ -66,11 +66,14 @@ header {
       background: white;
     }
   }
-  .person-icon {
-    margin-right: 1.25rem;
-  }
-  .cart-icon {
-    margin-right: 1.25rem;
+  .misc-container {
+    display: flex;
+    .person-icon {
+      margin-left: 1rem;
+    }
+    .cart-icon {
+      margin-right: 1rem;
+    }
   }
 }
 .main-container {
@@ -141,10 +144,8 @@ header {
       font-weight: 300;
     }
     .about-btn {
-      color: var(--grey);
-      border: 2px solid var(--grey);
-      border-radius: 3px;
       a {
+        color: var(--darkblue);
         font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
@@ -304,5 +305,8 @@ header {
 @media (max-width: 28.125rem) {
   .website-container {
     grid-template-rows: 3.125rem 43.75rem 31.25rem 56.25rem 3rem;
+  }
+  footer {
+    margin-top: 0.5rem;
   }
 }
