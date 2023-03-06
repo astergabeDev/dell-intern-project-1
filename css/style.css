@@ -59,7 +59,7 @@ header .input-container {
   border: 1px solid var(--grey);
   border-radius: 0.1875rem;
   width: 100%;
-  max-width: 37.5rem;
+  max-width: 32.5rem;
 }
 header .input-container input {
   border: none;
@@ -70,14 +70,11 @@ header .input-container .search-icon {
 }
 header .misc-container {
   display: flex;
+  justify-content: space-between;
 }
-header .misc-container .person-icon {
-  margin-left: 1rem;
+header .misc-container .icon {
+  margin: 0px 0.6rem;
 }
-header .misc-container .cart-icon {
-  margin-right: 1rem;
-}
-
 .main-container {
   background: white;
   display: flex;
@@ -277,6 +274,13 @@ header .misc-container .cart-icon {
   }
 }
 @media (max-width: 34.75rem) {
+  header .misc-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .misc-container .icon {
+    font-size: 1.4rem;
+  }
   .banner-container {
     margin: 0.9375rem;
     text-align: center;
